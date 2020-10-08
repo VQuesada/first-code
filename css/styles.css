@@ -1,41 +1,84 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 22px
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 22px
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
+
 
 /* Style the header */
+
 .header {
-  background-color: lightskyblue;
-  padding: 20px;
-  text-align: center;
-  height: 50vh
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
 }
 
+.header h1 {
+    /*h1 sin punto porque es una tiqueta*/
+    font-size: 60px;
+    color: red
+}
+
+.header p {
+    /*h1 sin punto porque es una tiqueta*/
+    font-size: 40px;
+}
+
+
 /* Create three equal columns that floats next to each other */
+
+
 /* Ejemplo de estilos por clase */
 
 .column {
-  float: left;
-  width: 100%;
-  /*padding: 0 20% 0 20%;*//*TOP RIGHT BOTTOM LEFT*/
-  padding: 20PX 20% /*TOP+BOTTOM RIGHT+LEFT*/
+    float: left;
+    width: 100%;
+    /*padding: 0 20% 0 20%;*/
+    /*TOP RIGHT BOTTOM LEFT*/
+    padding: 20PX 20%/*TOP+BOTTOM RIGHT+LEFT*/
 }
+
+.column h2 {
+    color: green;
+    text-align: center;
+}
+
 
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
+
+/*Image Gallery*/
+
+.gallery {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.gallery img {
     width: 100%;
-  }
+}
+
+.gallery .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
 }
