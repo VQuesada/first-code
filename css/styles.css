@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 22px
 }
 
 body {
@@ -12,8 +11,10 @@ body {
 /* Style the header */
 
 .header {
-    background-color: lightskyblue;
-    padding: 20px;
+    background-image: url('../img/pexels-photo.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
     text-align: center;
 }
 
@@ -26,6 +27,7 @@ body {
 .header p {
     /*h1 sin punto porque es una tiqueta*/
     font-size: 40px;
+    color: whitesmoke
 }
 
 
@@ -34,7 +36,7 @@ body {
 
 /* Ejemplo de estilos por clase */
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     /*padding: 0 20% 0 20%;*/
@@ -42,9 +44,34 @@ body {
     padding: 20PX 20%/*TOP+BOTTOM RIGHT+LEFT*/
 }
 
-.column h2 {
-    color: green;
+.one-column h1,
+.one-column h2 {
     text-align: center;
+}
+
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
 }
 
 
@@ -58,21 +85,6 @@ body {
 
 
 /*Image Gallery*/
-
-.gallery {
-    padding: 20px;
-    float: left;
-    width: 33.33%;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.gallery .desc {
-    padding: 15px;
-    text-align: center;
-}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
