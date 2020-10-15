@@ -70,8 +70,34 @@ body {
     text-align: center;
 }
 
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
 #cadetblue {
     background-color: cadetblue;
+}
+
+
+/*Estilos footer*/
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white
+}
+
+#footer-b {
+    background-color: #212529;
+}
+
+#footer-b p {
+    text-align: center;
+    color: #868e96
 }
 
 
